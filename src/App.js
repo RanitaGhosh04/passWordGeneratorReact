@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import './App.css';
 import { lowercaseLetters, numbers, special, upperCaseLetters } from './data';
-import Modal from './Modal';
+import Modal from './Modal.jsx';
 
 function App() {
   
@@ -94,7 +94,7 @@ function App() {
         title : 'Error',
         message : 'There is nothing to copy',
         show : true
-      })
+      });
       }
 
       else{
@@ -102,7 +102,7 @@ function App() {
           title : 'success',
           message : 'Password successfully copied to clipboard',
           show : true
-        })
+        });
 
 
     }
